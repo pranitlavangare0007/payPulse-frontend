@@ -98,8 +98,8 @@ bank-app-frontend/
 
 ```bash
 # Clone the repository
-git clone https://github.com/pranitlavangare0007/bank-app-frontend.git
-cd bank-app-frontend
+git clone https://github.com/pranitlavangare0007/payPulse-.git
+cd payPulse-
 
 # Install dependencies
 npm install
