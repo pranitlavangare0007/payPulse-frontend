@@ -11,7 +11,7 @@ export function Profile(){
         async function fetchProfile(){
             try{
                 const response = await api.get("/profile"); 
-                // <-- your backend endpoint that returns this object
+              
                 setProfile(response.data);
             }
             catch(err){

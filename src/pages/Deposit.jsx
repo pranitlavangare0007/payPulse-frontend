@@ -7,9 +7,9 @@ import '../styles/deposite.css'
 
 
 export function Deposit() {
-  const [amount, setAmount] = useState(0);
+  const [amount, setAmount] = useState(null);
   const [mpin, setMpin] = useState("");
-  const [channel] = useState("CASH")
+  const channel = "CASH";
 
   const navigate = useNavigate();
 
@@ -60,6 +60,7 @@ export function Deposit() {
             
             <input
               type="number"
+              value={amount}
               onChange={e => setAmount(e.target.value)}
               placeholder="Enter amount"
               required
@@ -72,6 +73,7 @@ export function Deposit() {
           <input
             type="password"
             maxLength="6"
+            value={mpin}
             onChange={e => setMpin(e.target.value)}
             placeholder="Enter 6-digit MPIN"
             required

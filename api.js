@@ -26,9 +26,9 @@ api.interceptors.response.use(
   err => {
     const msg = err?.response?.data?.message;
 
-    if(msg){
+    if (msg) {
       alert(msg);
-    }else{
+    } else {
       alert("Server not reachable");
     }
 

@@ -17,6 +17,7 @@ export function Transactions() {
     useEffect(() => {
         if (!accountNumber) {
             navigate("/select-account");
+            return;
         }
         async function fetchTransactions() {
             try {

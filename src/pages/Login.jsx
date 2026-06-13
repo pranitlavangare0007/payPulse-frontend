@@ -32,7 +32,7 @@ export function Login() {
 return (
   <div className="bank-login-page">
 
-    {/* LEFT SIDE — BRANDING */}
+   
     <div className="bank-login-left">
 
       <div className="brand">
@@ -61,7 +61,7 @@ return (
 
     </div>
 
-    {/* RIGHT SIDE — LOGIN FORM */}
+   
     <div className="bank-login-right">
 
       <form className="login-form" onSubmit={(e) => {
