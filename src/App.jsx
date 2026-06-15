@@ -18,7 +18,7 @@ import { AccountProtectedRoute } from "./components/AccountProtectedRoute";
 import { Profile } from "./pages/profile";
 import { Transactions } from "./pages/Transactions";
 
-import AdminPanel from "./pages/AdminPanel";
+
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/" element={<Welcome />} />
-        <Route path="/admin-panel" element={<AdminPanel />} />
+       
 
 
         <Route element={<Layout />}>
