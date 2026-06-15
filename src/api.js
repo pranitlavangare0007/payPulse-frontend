@@ -24,8 +24,17 @@ api.interceptors.request.use(config => {
 api.interceptors.response.use(
   res => res,
   err => {
+    const status=err?.response?.status;
     const msg = err?.response?.data?.message;
 
+    if(status === 401){
+      localStorage.removeItem("token");
+      localStorage.removeItem("username");
+      sessionStorage.removeItem("selectedAccount");
+      alert("Session expired. Please login again.");
+       window.location.href="/login";
+      return Promise.reject(err);
+    }
     if (msg) {
       alert(msg);
     } else {

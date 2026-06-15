@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import api from '../../api';
+import api from '../api';
 import "../styles/registration.css";
 
 export function Register() {
@@ -33,7 +33,7 @@ export function Register() {
   const handleOtpVerification = async (event) => {
     event.preventDefault();
     try {
-      // await api.post(`/verify-otp`, { email, otp });
+     
       await api.post(`verify-otp?email=${email}&otp=${otp}`);
       setOtpVerified(true);
       alert("Email verified");

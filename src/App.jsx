@@ -17,7 +17,7 @@ import { Statement } from "./pages/Statement";
 import { AccountProtectedRoute } from "./components/AccountProtectedRoute";
 import { Profile } from "./pages/profile";
 import { Transactions } from "./pages/Transactions";
-import { Email } from "./pages/Email";
+
 import AdminPanel from "./pages/AdminPanel";
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
 
 
         <Route element={<Layout />}>
-          <Route path="/email" element={<Email />} />
+         
           <Route path="/profile" element={<AccountProtectedRoute><Profile /></AccountProtectedRoute>} />
           <Route path="/dashboard" element={<AccountProtectedRoute><Dashboard /></AccountProtectedRoute>} />
           <Route path="/select-account" element={<SelectAccount />} />
